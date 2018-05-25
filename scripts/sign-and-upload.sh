@@ -15,3 +15,11 @@ xcodebuild \
 -configuration Release \
 PROVISIONING_PROFILE="$PROVISIONING_PROFILE" \
 archive 
+
+# Export the archive to an ipa
+xcodebuild \
+-exportArchive \
+-archivePath "$OUTPUTDIR/$APP_NAME.xcarchive" \
+-exportPath "$OUTPUTDIR"
+
+#-exportOptionsPlist "${EXPORT_PLIST}" \
