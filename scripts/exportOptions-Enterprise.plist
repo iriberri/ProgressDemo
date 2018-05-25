@@ -9,7 +9,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.iss.issadmin</key>
-		<string>Communicator_Development</string>
+		<string>Communicator_Push_Distribution</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>iPhone Developer</string>
