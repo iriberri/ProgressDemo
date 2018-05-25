@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D52201DE20B54BE100516BA7 /* ApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52201DD20B54BE100516BA7 /* ApiClientManager.swift */; };
-		D523EDC020B6CEB4002C963E /* dist.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = D523EDBE20B6CEB4002C963E /* dist.p12.enc */; };
-		D523EDC120B6CEB4002C963E /* dist.cer.enc in Resources */ = {isa = PBXBuildFile; fileRef = D523EDBF20B6CEB4002C963E /* dist.cer.enc */; };
-		D523EDC320B6CEE2002C963E /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D523EDC220B6CEE2002C963E /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
 		D5BDBEE320B6960300C6D250 /* apple.cer in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE220B6960300C6D250 /* apple.cer */; };
 		D5BDBEEC20B6A73000C6D250 /* update-bundle.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE820B6A72F00C6D250 /* update-bundle.sh */; };
 		D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */; };
@@ -24,6 +21,9 @@
 		D5DF4DCE20AD6DBB00271373 /* ProgressDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DCD20AD6DBB00271373 /* ProgressDemoTests.swift */; };
 		D5DF4DD920AD6DBB00271373 /* ProgressDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DD820AD6DBB00271373 /* ProgressDemoUITests.swift */; };
 		D5DF4DE720ADB33D00271373 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DE620ADB33D00271373 /* Extentions.swift */; };
+		D5E40B1A20B80A3100C08588 /* dist.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5E40B1820B80A3100C08588 /* dist.p12.enc */; };
+		D5E40B1B20B80A3100C08588 /* dist.cer.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5E40B1920B80A3100C08588 /* dist.cer.enc */; };
+		D5E40B1D20B80A3800C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5E40B1C20B80A3800C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,6 @@
 
 /* Begin PBXFileReference section */
 		D52201DD20B54BE100516BA7 /* ApiClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientManager.swift; sourceTree = "<group>"; };
-		D523EDBE20B6CEB4002C963E /* dist.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.p12.enc; sourceTree = "<group>"; };
-		D523EDBF20B6CEB4002C963E /* dist.cer.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.cer.enc; sourceTree = "<group>"; };
-		D523EDC220B6CEE2002C963E /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
 		D5BDBEE220B6960300C6D250 /* apple.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.cer; sourceTree = "<group>"; };
 		D5BDBEE820B6A72F00C6D250 /* update-bundle.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "update-bundle.sh"; sourceTree = "<group>"; };
 		D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "sign-and-upload.sh"; sourceTree = "<group>"; };
@@ -67,6 +64,9 @@
 		D5DF4DD820AD6DBB00271373 /* ProgressDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoUITests.swift; sourceTree = "<group>"; };
 		D5DF4DDA20AD6DBB00271373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DF4DE620ADB33D00271373 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		D5E40B1820B80A3100C08588 /* dist.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.p12.enc; sourceTree = "<group>"; };
+		D5E40B1920B80A3100C08588 /* dist.cer.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.cer.enc; sourceTree = "<group>"; };
+		D5E40B1C20B80A3800C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 		D5BDBEDA20B6950F00C6D250 /* profile */ = {
 			isa = PBXGroup;
 			children = (
-				D523EDC220B6CEE2002C963E /* TravisExample_Ad_Hoc.mobileprovision.enc */,
+				D5E40B1C20B80A3800C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -172,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				D5BDBEE220B6960300C6D250 /* apple.cer */,
-				D523EDBF20B6CEB4002C963E /* dist.cer.enc */,
-				D523EDBE20B6CEB4002C963E /* dist.p12.enc */,
+				D5E40B1920B80A3100C08588 /* dist.cer.enc */,
+				D5E40B1820B80A3100C08588 /* dist.p12.enc */,
 			);
 			path = certs;
 			sourceTree = "<group>";
@@ -331,16 +331,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D523EDC320B6CEE2002C963E /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
-				D523EDC120B6CEB4002C963E /* dist.cer.enc in Resources */,
 				D5DF4DC320AD6DBB00271373 /* LaunchScreen.storyboard in Resources */,
 				D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */,
-				D523EDC020B6CEB4002C963E /* dist.p12.enc in Resources */,
 				D5DF4DC020AD6DBB00271373 /* Assets.xcassets in Resources */,
 				D5DF4DBE20AD6DBA00271373 /* Main.storyboard in Resources */,
 				D5BDBEEC20B6A73000C6D250 /* update-bundle.sh in Resources */,
+				D5E40B1A20B80A3100C08588 /* dist.p12.enc in Resources */,
+				D5E40B1B20B80A3100C08588 /* dist.cer.enc in Resources */,
 				D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */,
 				D5BDBEEE20B6A73000C6D250 /* add-key.sh in Resources */,
+				D5E40B1D20B80A3800C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEE320B6960300C6D250 /* apple.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,8 +542,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ISS 247 (UGTGY4JDL7)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFF562SLKT;
 				INFOPLIST_FILE = ProgressDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,8 +552,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ca5b0710-8261-4fb7-abe2-9228e616b7e1";
-				PROVISIONING_PROFILE_SPECIFIER = Communicator_Development;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -563,8 +563,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ISS 247 (UGTGY4JDL7)";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EFF562SLKT;
 				INFOPLIST_FILE = ProgressDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -573,8 +573,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ca5b0710-8261-4fb7-abe2-9228e616b7e1";
-				PROVISIONING_PROFILE_SPECIFIER = Communicator_Development;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
