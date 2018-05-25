@@ -2,22 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>compileBitcode</key>
-	<true/>
-	
-	<key>method</key>
-	<string>ad-hoc</string>
-	
-	<key>provisioningProfiles</key>
-	<dict>
-		<key>com.iss.issadmin</key>
-		<string>Communicator_Push_Distribution</string>
-	</dict>
-	
-	<key>signingCertificate</key>
-	<string>iPhone Distribution</string>
-
-	<key>teamID</key>
-	<string>EFF562SLKT</string>
+    <key>method</key>
+    <string>ad-hoc</string>
+    <key>teamID</key>
+    <string>EFF562SLKT</string>
+    <key>compileBitcode</key>
+    <false/>
 </dict>
 </plist>
