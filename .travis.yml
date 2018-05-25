@@ -27,14 +27,6 @@ script:
   - xcodebuild -showsdks
   #- xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 
-# Archive the application
-- xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -archivePath $OUTPUTDIR/$APP_NAME.xcarchive -configuration Release PROVISIONING_PROFILE=$PROVISIONING_PROFILE archive 
-
-# Export the archive to an ipa
-- xcodebuild -exportArchive -archivePath $OUTPUTDIR/$APP_NAME.xcarchive -exportPath $OUTPUTDIR
-
-#-exportOptionsPlist "${EXPORT_PLIST}" \
-
 after_success:
 - ./scripts/sign-and-upload.sh
 
