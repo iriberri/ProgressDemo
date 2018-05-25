@@ -4,19 +4,19 @@
 <dict>
 	<key>compileBitcode</key>
 	<true/>
+	
 	<key>method</key>
 	<string>ad-hoc</string>
+	
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.iss.issadmin</key>
 		<string>Communicator_Push_Distribution</string>
 	</dict>
+	
 	<key>signingCertificate</key>
 	<string>iPhone Distribution</string>
-	<key>signingStyle</key>
-	<string>manual</string>
-	<key>stripSwiftSymbols</key>
-	<true/>
+
 	<key>teamID</key>
 	<string>EFF562SLKT</string>
 </dict>
