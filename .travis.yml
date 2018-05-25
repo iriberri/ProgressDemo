@@ -1,0 +1,42 @@
+language: objective-c
+osx_image: xcode9.3
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - APP_NAME="TravisExample"
+  - 'DEVELOPER_NAME="iPhone Distribution: 24/7 Software, Inc. (EFF562SLKT)"'
+  - PROFILE_NAME="TravisExample_Ad_Hoc"
+  - PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
+  - OUTPUTDIR="$PWD/build/Release-iphoneos"
+
+before_script:
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisExample_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisExample_Ad_Hoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
+- ./scripts/add-key.sh
+
+before_install:
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  #- xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
+
+# Archive the application
+- xcodebuild -scheme ProgressDemo -sdk iphoneos -archivePath $OUTPUTDIR/$APP_NAME.xcarchive -configuration Release PROVISIONING_PROFILE=$PROVISIONING_PROFILE archive 
+
+# Export the archive to an ipa
+xcodebuild -exportArchive -archivePath $OUTPUTDIR/$APP_NAME.xcarchive -exportPath $OUTPUTDIR
+
+#-exportOptionsPlist "${EXPORT_PLIST}" \
+
+after_success:
+- ./scripts/sign-and-upload.sh
+
+after_script:
+- ./scripts/remove-key.sh
