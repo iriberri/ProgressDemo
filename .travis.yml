@@ -6,7 +6,7 @@ branches:
 
 env:
   global:
-  - APP_NAME="TravisExample"
+  - APP_NAME="ProgressDemo"
   - 'DEVELOPER_NAME="iPhone Distribution: 24/7 Software, Inc. (EFF562SLKT)"'
   - PROFILE_NAME="TravisExample_Ad_Hoc"
   - PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
