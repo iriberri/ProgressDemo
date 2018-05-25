@@ -1,0 +1,34 @@
+language: objective-c
+osx_image: xcode9.3
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - APP_NAME="ProgressDemo"
+  - 'DEVELOPER_NAME="iPhone Distribution: 24/7 Software, Inc. (EFF562SLKT)"'
+  - PROFILE_NAME="TravisExample_Ad_Hoc"
+  - PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
+  - OUTPUTDIR="$PWD/build/Release-iphoneos"
+
+before_script:
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisExample_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisExample_Ad_Hoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
+- ./scripts/add-key.sh
+
+before_install:
+  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
+
+script:
+  - set -o pipefail
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build
+
+after_success:
+- ./scripts/sign-and-upload.sh
+
+after_script:
+- ./scripts/remove-key.sh
