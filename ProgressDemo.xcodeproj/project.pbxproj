@@ -13,6 +13,7 @@
 		D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */; };
 		D5BDBEEE20B6A73000C6D250 /* add-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEEA20B6A73000C6D250 /* add-key.sh */; };
 		D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEEB20B6A73000C6D250 /* remove-key.sh */; };
+		D5C635A920B81A400058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5C635A820B81A3F0058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
 		D5DF4DB920AD6DBA00271373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DB820AD6DBA00271373 /* AppDelegate.swift */; };
 		D5DF4DBB20AD6DBA00271373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DBA20AD6DBA00271373 /* ViewController.swift */; };
 		D5DF4DBE20AD6DBA00271373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DF4DBC20AD6DBA00271373 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		D5DF4DE720ADB33D00271373 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DE620ADB33D00271373 /* Extentions.swift */; };
 		D5FB1FAA20B81441003246C0 /* dist.cer.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5FB1FA820B81441003246C0 /* dist.cer.enc */; };
 		D5FB1FAB20B81441003246C0 /* dist.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5FB1FA920B81441003246C0 /* dist.p12.enc */; };
-		D5FB1FAD20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5FB1FAC20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,7 @@
 		D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "sign-and-upload.sh"; sourceTree = "<group>"; };
 		D5BDBEEA20B6A73000C6D250 /* add-key.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "add-key.sh"; sourceTree = "<group>"; };
 		D5BDBEEB20B6A73000C6D250 /* remove-key.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "remove-key.sh"; sourceTree = "<group>"; };
+		D5C635A820B81A3F0058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
 		D5DF4DB520AD6DBA00271373 /* ProgressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DF4DB820AD6DBA00271373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5DF4DBA20AD6DBA00271373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		D5DF4DE620ADB33D00271373 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		D5FB1FA820B81441003246C0 /* dist.cer.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.cer.enc; sourceTree = "<group>"; };
 		D5FB1FA920B81441003246C0 /* dist.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.p12.enc; sourceTree = "<group>"; };
-		D5FB1FAC20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 		D5BDBEDA20B6950F00C6D250 /* profile */ = {
 			isa = PBXGroup;
 			children = (
-				D5FB1FAC20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc */,
+				D5C635A820B81A3F0058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -332,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DF4DC320AD6DBB00271373 /* LaunchScreen.storyboard in Resources */,
+				D5C635A920B81A400058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */,
 				D5FB1FAB20B81441003246C0 /* dist.p12.enc in Resources */,
 				D5DF4DC020AD6DBB00271373 /* Assets.xcassets in Resources */,
@@ -339,7 +340,6 @@
 				D5BDBEEC20B6A73000C6D250 /* update-bundle.sh in Resources */,
 				D5FB1FAA20B81441003246C0 /* dist.cer.enc in Resources */,
 				D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */,
-				D5FB1FAD20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEEE20B6A73000C6D250 /* add-key.sh in Resources */,
 				D5BDBEE320B6960300C6D250 /* apple.cer in Resources */,
 			);
@@ -553,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "180c7130-d3fb-4e5f-8965-f07266293f0c";
-				PROVISIONING_PROFILE_SPECIFIER = Communicator_AppStore;
+				PROVISIONING_PROFILE_SPECIFIER = Communicator_Push_Distribution;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -574,7 +574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "180c7130-d3fb-4e5f-8965-f07266293f0c";
-				PROVISIONING_PROFILE_SPECIFIER = Communicator_AppStore;
+				PROVISIONING_PROFILE_SPECIFIER = Communicator_Push_Distribution;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
