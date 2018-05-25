@@ -21,9 +21,9 @@
 		D5DF4DCE20AD6DBB00271373 /* ProgressDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DCD20AD6DBB00271373 /* ProgressDemoTests.swift */; };
 		D5DF4DD920AD6DBB00271373 /* ProgressDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DD820AD6DBB00271373 /* ProgressDemoUITests.swift */; };
 		D5DF4DE720ADB33D00271373 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DE620ADB33D00271373 /* Extentions.swift */; };
-		D5E40B2820B80D2900C08588 /* dist.cer.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5E40B2620B80D2900C08588 /* dist.cer.enc */; };
-		D5E40B2920B80D2900C08588 /* dist.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5E40B2720B80D2900C08588 /* dist.p12.enc */; };
-		D5E40B2B20B80D3F00C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5E40B2A20B80D3F00C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
+		D5FB1FAA20B81441003246C0 /* dist.cer.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5FB1FA820B81441003246C0 /* dist.cer.enc */; };
+		D5FB1FAB20B81441003246C0 /* dist.p12.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5FB1FA920B81441003246C0 /* dist.p12.enc */; };
+		D5FB1FAD20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5FB1FAC20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +64,9 @@
 		D5DF4DD820AD6DBB00271373 /* ProgressDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDemoUITests.swift; sourceTree = "<group>"; };
 		D5DF4DDA20AD6DBB00271373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DF4DE620ADB33D00271373 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
-		D5E40B2620B80D2900C08588 /* dist.cer.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.cer.enc; sourceTree = "<group>"; };
-		D5E40B2720B80D2900C08588 /* dist.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.p12.enc; sourceTree = "<group>"; };
-		D5E40B2A20B80D3F00C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
+		D5FB1FA820B81441003246C0 /* dist.cer.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.cer.enc; sourceTree = "<group>"; };
+		D5FB1FA920B81441003246C0 /* dist.p12.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dist.p12.enc; sourceTree = "<group>"; };
+		D5FB1FAC20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 		D5BDBEDA20B6950F00C6D250 /* profile */ = {
 			isa = PBXGroup;
 			children = (
-				D5E40B2A20B80D3F00C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc */,
+				D5FB1FAC20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -172,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				D5BDBEE220B6960300C6D250 /* apple.cer */,
-				D5E40B2620B80D2900C08588 /* dist.cer.enc */,
-				D5E40B2720B80D2900C08588 /* dist.p12.enc */,
+				D5FB1FA820B81441003246C0 /* dist.cer.enc */,
+				D5FB1FA920B81441003246C0 /* dist.p12.enc */,
 			);
 			path = certs;
 			sourceTree = "<group>";
@@ -332,14 +332,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DF4DC320AD6DBB00271373 /* LaunchScreen.storyboard in Resources */,
-				D5E40B2B20B80D3F00C08588 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */,
-				D5E40B2920B80D2900C08588 /* dist.p12.enc in Resources */,
+				D5FB1FAB20B81441003246C0 /* dist.p12.enc in Resources */,
 				D5DF4DC020AD6DBB00271373 /* Assets.xcassets in Resources */,
 				D5DF4DBE20AD6DBA00271373 /* Main.storyboard in Resources */,
 				D5BDBEEC20B6A73000C6D250 /* update-bundle.sh in Resources */,
+				D5FB1FAA20B81441003246C0 /* dist.cer.enc in Resources */,
 				D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */,
-				D5E40B2820B80D2900C08588 /* dist.cer.enc in Resources */,
+				D5FB1FAD20B81449003246C0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEEE20B6A73000C6D250 /* add-key.sh in Resources */,
 				D5BDBEE320B6960300C6D250 /* apple.cer in Resources */,
 			);
@@ -552,7 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "261625a9-008d-4d1b-9370-03bf9bb11386";
+				PROVISIONING_PROFILE = "180c7130-d3fb-4e5f-8965-f07266293f0c";
 				PROVISIONING_PROFILE_SPECIFIER = Communicator_AppStore;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,7 +573,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iss.issadmin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "261625a9-008d-4d1b-9370-03bf9bb11386";
+				PROVISIONING_PROFILE = "180c7130-d3fb-4e5f-8965-f07266293f0c";
 				PROVISIONING_PROFILE_SPECIFIER = Communicator_AppStore;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
