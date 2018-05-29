@@ -11,7 +11,7 @@
 xcodebuild \
 -scheme "ProgressDemo" \
 -sdk "iphoneos" \
--archivePath "./scripts/$APP_NAME.xcarchive" \
+-archivePath "$OUTPUTDIR/$APP_NAME.xcarchive" \
 -configuration Release \
 PROVISIONING_PROFILE="$PROVISIONING_PROFILE" \
 archive 
@@ -19,7 +19,7 @@ archive
 # Export the archive to an ipa
 xcodebuild \
 -exportArchive \
--archivePath "./scripts/$APP_NAME.xcarchive" \
+-archivePath "$OUTPUTDIR/$APP_NAME.xcarchive" \
 -exportOptionsPlist "scripts/exportOptions-Enterprise.plist" \
--exportPath "./scripts/build/Release-iphoneos"
+-exportPath "$OUTPUTDIR"
 
