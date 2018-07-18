@@ -3,7 +3,6 @@ osx_image: xcode9.3
 branches:
   only:
   - master
-
 env:
   global:
   - APP_NAME="ProgressDemo"
@@ -11,24 +10,30 @@ env:
   - PROFILE_NAME="TravisExample_Ad_Hoc"
   - PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
   - OUTPUTDIR="$PWD/build/Release-iphoneos"
-
 before_script:
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisExample_Ad_Hoc.mobileprovision.enc -d -a -out scripts/profile/TravisExample_Ad_Hoc.mobileprovision
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
-- ./scripts/add-key.sh
-
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/TravisExample_Ad_Hoc.mobileprovision.enc
+  -d -a -out scripts/profile/TravisExample_Ad_Hoc.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a
+  -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a
+  -out scripts/certs/dist.p12
+- "./scripts/add-key.sh"
 before_install:
-  - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
-
+- gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
-  - set -o pipefail
-  - xcodebuild -version
-  - xcodebuild -showsdks
-  - xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build
-
+- set -o pipefail
+- xcodebuild -version
+- xcodebuild -showsdks
+- xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration
+  Release OBJROOT=$PWD/build SYMROOT=$PWD/build
 after_success:
-- ./scripts/sign-and-upload.sh
-
+- "./scripts/sign-and-upload.sh"
 after_script:
-- ./scripts/remove-key.sh
+- "./scripts/remove-key.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: IwtbH7yUZEl1eDUtj8/YPMXJ3QhQDAArqEoWUeJmWNshM9otmtx+vOTA1Et6JX/NVTwD+EHyd6UDfqT48UK+li03GG0o8D3NJpWExil3LwIPNnyfq9gwE6QmV7ph791i6g1/P8irRCDIUKNQ8NMusdg3RDTePhi7ERmgr1TnVI3nmrTdjvPl3X4OqedhqcFnMzBr7hTcrLtmLspUHPiu+mrPdu/AmrIR07e39kCIdPpguhd64m+BYVUbl1azgG94p29Gffoz4cPG7pZfAeskP0Np6PXEfFcvXKc2abAaHqQZ02JA3hBoug9AUaUk7FYGgc0Mz+YuwocE2JHONo20M4w/hMCdZONKDAV79HFffh6naAygcJHm38r23I9Bmo+o6Cn/wIHK/MLTKXHiOYQv381mleo6p/3IAsvbyREg+KuT9YgEmgH+U0B0Wm7vUZJQWNKS7BJna+57tNROyIkAawBb3HyAeT43tzElx3PK8O40D23bEOOsWISTT1+A8RZoq5dSck7m7zp+LCjNPpqBM3jxpY+nClUlNirf6SamNx4J+/xRKuydBcAZSLYggPmjQhI0/+6YUbb4xfjrWDS2Y2gU82FHqcREhFxQxxoHRPAU5THzMsNK/na603IfWHIYwanRGFM0+qwObiTi6/aUNbkOwzOeM2JuRP03PRMG0sk=
+  file: ProgressDemo.xcarchive
+  on:
+    repo: PawanAhire/ProgressDemo
