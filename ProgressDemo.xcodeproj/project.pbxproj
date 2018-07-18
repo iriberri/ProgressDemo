@@ -14,6 +14,7 @@
 		D5BDBEEE20B6A73000C6D250 /* add-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEEA20B6A73000C6D250 /* add-key.sh */; };
 		D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEEB20B6A73000C6D250 /* remove-key.sh */; };
 		D5C635A920B81A400058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */ = {isa = PBXBuildFile; fileRef = D5C635A820B81A3F0058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc */; };
+		D5C9245E20FF6F7C0014EABA /* push.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5C9245D20FF6F7C0014EABA /* push.sh */; };
 		D5DF4DB920AD6DBA00271373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DB820AD6DBA00271373 /* AppDelegate.swift */; };
 		D5DF4DBB20AD6DBA00271373 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF4DBA20AD6DBA00271373 /* ViewController.swift */; };
 		D5DF4DBE20AD6DBA00271373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DF4DBC20AD6DBA00271373 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		D5BDBEEA20B6A73000C6D250 /* add-key.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "add-key.sh"; sourceTree = "<group>"; };
 		D5BDBEEB20B6A73000C6D250 /* remove-key.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "remove-key.sh"; sourceTree = "<group>"; };
 		D5C635A820B81A3F0058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravisExample_Ad_Hoc.mobileprovision.enc; sourceTree = "<group>"; };
+		D5C9245D20FF6F7C0014EABA /* push.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = push.sh; sourceTree = "<group>"; };
 		D5DF4DB520AD6DBA00271373 /* ProgressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DF4DB820AD6DBA00271373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5DF4DBA20AD6DBA00271373 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				D5BDBEEB20B6A73000C6D250 /* remove-key.sh */,
 				D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */,
 				D5BDBEE820B6A72F00C6D250 /* update-bundle.sh */,
+				D5C9245D20FF6F7C0014EABA /* push.sh */,
 				D5BDBEDB20B6951800C6D250 /* certs */,
 				D5BDBEDA20B6950F00C6D250 /* profile */,
 			);
@@ -331,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C9245E20FF6F7C0014EABA /* push.sh in Resources */,
 				D5DF4DC320AD6DBB00271373 /* LaunchScreen.storyboard in Resources */,
 				D5C635A920B81A400058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */,
