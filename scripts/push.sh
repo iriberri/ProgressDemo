@@ -11,8 +11,8 @@ commit_website_files() {
 }
 
 upload_files() {
-  git remote add origin "https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git"
-  git remote -v
+  #git remote add origin "https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git"
+  #git remote -v
   git push -u origin master
   #git push -d release latest
 }
