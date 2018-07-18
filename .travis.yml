@@ -25,7 +25,7 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  - xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build
+  - xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build | xcpretty
 
 after_success:
 - ./scripts/sign-and-upload.sh
