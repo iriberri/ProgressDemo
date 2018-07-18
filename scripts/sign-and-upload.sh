@@ -14,12 +14,12 @@ xcodebuild \
 -archivePath "$OUTPUTDIR/$APP_NAME.xcarchive" \
 -configuration Release \
 PROVISIONING_PROFILE="$PROVISIONING_PROFILE" \
-archive | xcpretty
+archive
 
 # Export the archive to an ipa
 xcodebuild \
 -exportArchive \
 -archivePath "$OUTPUTDIR/$APP_NAME.xcarchive" \
 -exportOptionsPlist "scripts/exportOptions-Enterprise.plist" \
--exportPath "$OUTPUTDIR" | xcpretty
+-exportPath "$OUTPUTDIR"
 
