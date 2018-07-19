@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D52201DE20B54BE100516BA7 /* ApiClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52201DD20B54BE100516BA7 /* ApiClientManager.swift */; };
+		D5266BB72100BA1500089EF6 /* deploy.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5266BB52100BA1400089EF6 /* deploy.sh */; };
+		D5266BB82100BA1500089EF6 /* changefile.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5266BB62100BA1500089EF6 /* changefile.sh */; };
 		D5BDBEE320B6960300C6D250 /* apple.cer in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE220B6960300C6D250 /* apple.cer */; };
 		D5BDBEEC20B6A73000C6D250 /* update-bundle.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE820B6A72F00C6D250 /* update-bundle.sh */; };
 		D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */; };
@@ -46,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		D52201DD20B54BE100516BA7 /* ApiClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientManager.swift; sourceTree = "<group>"; };
+		D5266BB52100BA1400089EF6 /* deploy.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = deploy.sh; sourceTree = "<group>"; };
+		D5266BB62100BA1500089EF6 /* changefile.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = changefile.sh; sourceTree = "<group>"; };
 		D5BDBEE220B6960300C6D250 /* apple.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.cer; sourceTree = "<group>"; };
 		D5BDBEE820B6A72F00C6D250 /* update-bundle.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "update-bundle.sh"; sourceTree = "<group>"; };
 		D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "sign-and-upload.sh"; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				D5BDBEE920B6A72F00C6D250 /* sign-and-upload.sh */,
 				D5BDBEE820B6A72F00C6D250 /* update-bundle.sh */,
 				D5C9245D20FF6F7C0014EABA /* push.sh */,
+				D5266BB62100BA1500089EF6 /* changefile.sh */,
+				D5266BB52100BA1400089EF6 /* deploy.sh */,
 				D5BDBEDB20B6951800C6D250 /* certs */,
 				D5BDBEDA20B6950F00C6D250 /* profile */,
 			);
@@ -338,9 +344,11 @@
 				D5DF4DC320AD6DBB00271373 /* LaunchScreen.storyboard in Resources */,
 				D5C635A920B81A400058ABD0 /* TravisExample_Ad_Hoc.mobileprovision.enc in Resources */,
 				D5BDBEEF20B6A73000C6D250 /* remove-key.sh in Resources */,
+				D5266BB82100BA1500089EF6 /* changefile.sh in Resources */,
 				D5FB1FAB20B81441003246C0 /* dist.p12.enc in Resources */,
 				D5DF4DC020AD6DBB00271373 /* Assets.xcassets in Resources */,
 				D5DF4DBE20AD6DBA00271373 /* Main.storyboard in Resources */,
+				D5266BB72100BA1500089EF6 /* deploy.sh in Resources */,
 				D5BDBEEC20B6A73000C6D250 /* update-bundle.sh in Resources */,
 				D5FB1FAA20B81441003246C0 /* dist.cer.enc in Resources */,
 				D5BDBEED20B6A73000C6D250 /* sign-and-upload.sh in Resources */,
