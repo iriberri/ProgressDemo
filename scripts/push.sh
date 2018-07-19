@@ -7,6 +7,7 @@ setup_git() {
 }
 
 commit_website_files() {
+  git checkout -b gh-pages
   git add .
   git commit -m "Travis build"
 }
