@@ -6,11 +6,11 @@ setup_git() {
   git config --global user.name "Travis"
 }
 
-commit_website_files() {
+#commit_website_files() {
   #git checkout -b gh-pages
   #git add .
   #git commit -m "Travis build"
-}
+#}
 
 upload_files() {
 
@@ -43,5 +43,5 @@ upload_files() {
 }
 
 setup_git
-commit_website_files
+#commit_website_files
 upload_files
