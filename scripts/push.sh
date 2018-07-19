@@ -15,7 +15,7 @@ commit_website_files() {
 upload_files() {
 
   git remote add release https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
-  git push
+  git push -u origin master
   
   #git push --quiet --set-upstream origin-pages gh-pages
 
