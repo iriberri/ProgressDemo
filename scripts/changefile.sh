@@ -4,8 +4,8 @@
 YEAR=$(date +"%Y")
 MONTH=$(date +"%m")
 
-git config --global user.email "${ahire.pawan@gmail.com}"
-git config --global user.name "${PawanAhire}"
+git config --global user.email "travis@travis-ci.org"
+git config --global user.name "Travis"
 
 git config --global push.default simple
 
