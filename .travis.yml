@@ -30,6 +30,8 @@ before_deploy:
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
+  edge:
+    branch: ci-debug_releases
   file: ./build/Release-iphoneos/ProgressDemo.ipa
   skip_cleanup: true
   on:
