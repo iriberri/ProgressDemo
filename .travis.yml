@@ -32,7 +32,9 @@ after_script:
 - "./scripts/remove-key.sh"
 
 before_deploy:
-- "./scripts/push.sh"
+- ls ./build/Release-iphoneos/*.ipa
+- ls /Users/travis/build/PawanAhire/ProgressDemo/build/Release-iphoneos/*.ipa
+#- "./scripts/push.sh"
 
 deploy:
   provider: releases
