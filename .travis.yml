@@ -25,18 +25,18 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
   - xcodebuild -project ProgressDemo.xcodeproj -scheme ProgressDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build
+  - "./scripts/changefile.sh"
 
 after_success:
 - "./scripts/sign-and-upload.sh"
 after_script:
 - "./scripts/remove-key.sh"
-- "./scripts/changefile.sh"
+
 
 before_deploy:
 - ls -al ./build/Release-iphoneos/*.ipa
 - ls -al /Users/travis/build/PawanAhire/ProgressDemo/build/Release-iphoneos/*.ipa
 - "./scripts/deploy.sh"
-#- "./scripts/push.sh"
 
 
 deploy:
