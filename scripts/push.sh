@@ -7,15 +7,17 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout -b gh-pages
+  #git checkout -b gh-pages
   git add .
   git commit -m "Travis build"
 }
 
 upload_files() {
 
-  git remote add origin-pages https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
-  git push --quiet --set-upstream origin-pages gh-pages
+  git remote add release https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
+  git push -d release
+  
+  #git push --quiet --set-upstream origin-pages gh-pages
 
   #git remote add release https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
   #git push -d release latest
