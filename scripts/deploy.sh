@@ -8,7 +8,7 @@ git config --global user.name "Travis"
 
 git config --global push.default simple
 
-git remote add origin https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
+git remote add origin "https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git"
 
 export GIT_TAG=V2.$YEAR-$MONTH.$TRAVIS_BUILD_NUMBER
 
