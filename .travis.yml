@@ -45,8 +45,10 @@ deploy:
   provider: releases
   api_key:
     secure: IwtbH7yUZEl1eDUtj8/YPMXJ3QhQDAArqEoWUeJmWNshM9otmtx+vOTA1Et6JX/NVTwD+EHyd6UDfqT48UK+li03GG0o8D3NJpWExil3LwIPNnyfq9gwE6QmV7ph791i6g1/P8irRCDIUKNQ8NMusdg3RDTePhi7ERmgr1TnVI3nmrTdjvPl3X4OqedhqcFnMzBr7hTcrLtmLspUHPiu+mrPdu/AmrIR07e39kCIdPpguhd64m+BYVUbl1azgG94p29Gffoz4cPG7pZfAeskP0Np6PXEfFcvXKc2abAaHqQZ02JA3hBoug9AUaUk7FYGgc0Mz+YuwocE2JHONo20M4w/hMCdZONKDAV79HFffh6naAygcJHm38r23I9Bmo+o6Cn/wIHK/MLTKXHiOYQv381mleo6p/3IAsvbyREg+KuT9YgEmgH+U0B0Wm7vUZJQWNKS7BJna+57tNROyIkAawBb3HyAeT43tzElx3PK8O40D23bEOOsWISTT1+A8RZoq5dSck7m7zp+LCjNPpqBM3jxpY+nClUlNirf6SamNx4J+/xRKuydBcAZSLYggPmjQhI0/+6YUbb4xfjrWDS2Y2gU82FHqcREhFxQxxoHRPAU5THzMsNK/na603IfWHIYwanRGFM0+qwObiTi6/aUNbkOwzOeM2JuRP03PRMG0sk=
+  edge:
+    branch: ci-debug_releases
   file:
-  - "./build/Release-iphoneos/ProgressDemo.ipa/ProgressDemo.ipa"
+  - "./build/Release-iphoneos/ProgressDemo.ipa"
   skip_cleanup: true
   on:
     repo: PawanAhire/ProgressDemo
