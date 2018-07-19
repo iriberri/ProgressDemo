@@ -13,7 +13,7 @@ commit_website_files() {
 upload_files() {
   git remote add release https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
   git fetch --prune origin
-  git push -d release latest
+  git push -d release
   
   #git remote set-url origin https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git
   #git remote add origin "https://${GH_TOKEN}@github.com/PawanAhire/ProgressDemo.git"
