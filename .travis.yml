@@ -27,7 +27,8 @@ deploy:
   api_key: $GITHUB_TOKEN
   edge:
     branch: ci-debug_releases
-  file: ./build/Release-iphoneos/ProgressDemo-v$TRAVIS_BUILD_NUMBER.ipa
+  file:
+    - "./build/Release-iphoneos/ProgressDemo-v$TRAVIS_BUILD_NUMBER.ipa"
   skip_cleanup: true
   on:
     repo: iriberri/ProgressDemo
